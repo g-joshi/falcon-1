@@ -28,11 +28,14 @@
   },
   "projects": {
     "app-shell": {
-      "tags": []
+      "tags": ["app"]
     },
     "app-shell-e2e": {
       "tags": [],
       "implicitDependencies": ["app-shell"]
+    },
+    "graphql":{
+      "tags": ["api"]
     }
   }
 }

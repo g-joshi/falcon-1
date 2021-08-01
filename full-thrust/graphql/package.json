@@ -1,0 +1,14 @@
+{
+  "name": "graphql-apollo-federation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gateway/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-gateway": "nodemon gateway/index.js",
+    "start-service-users": "nodemon services/users/index.js",
+    "start-service-movies": "nodemon services/movies/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
