@@ -16,7 +16,7 @@ type Movie @key(fields: "id") {
 const resolvers = {
   Query: {
     topMovies() {
-      return { id: "1", name: "Computer", price: "3000" }
+      return { id: "1", name: "Test", price: "3000" }
     }
   },
   Movie: {
