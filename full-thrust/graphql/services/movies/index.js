@@ -6,8 +6,8 @@ const typeDefs = gql`
   topMovies: Movie
 }
 
-type Movie @key(fields: "upc") {
-  upc: String!
+type Movie @key(fields: "id") {
+  id: String!
   name: String!
   price: Int
 }
@@ -16,12 +16,12 @@ type Movie @key(fields: "upc") {
 const resolvers = {
   Query: {
     topMovies() {
-      return { upc: "one1", name: "Computer", price: "3000" }
+      return { id: "1", name: "Computer", price: "3000" }
     }
   },
   Movie: {
     __resolveReference(Movie, { fetchMovieByupc }){
-      return fetchMovieByupc(Movie.upc)
+      return fetchMovieByupc(Movie.id)
     }
   }
 }
