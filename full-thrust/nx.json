@@ -33,9 +33,6 @@
     "app-shell-e2e": {
       "tags": [],
       "implicitDependencies": ["app-shell"]
-    },
-    "graphql":{
-      "tags": ["api"]
     }
   }
 }
